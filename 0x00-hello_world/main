@@ -733,15 +733,6 @@ extern int __overflow (FILE *, int);
 # 8 "main.c"
 int main(void)
 {
-  return (0);
-}#include <stdio.h>
-
-
-
-
-
-
-int main(void)
-{
+  puts("Julius is doing it everyday");
   return (0);
 }
