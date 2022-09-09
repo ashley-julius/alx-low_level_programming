@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o do_it.o
+gcc -c $CFILE -o do-it.o'\n'
