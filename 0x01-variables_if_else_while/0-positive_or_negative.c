@@ -18,18 +18,18 @@ int main(void)
 		/*
 		 * prints the message if condition is true
 		*/
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	/* checks if n is zero */
 	else if (n == 0)
 		/*
 		 * prints the message if condition is true
 		 */
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	/* otherwise n is a negative number */
 	else
 		/*
 		 * prints the message if condition is true
 		 */
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	return (0);
 }
