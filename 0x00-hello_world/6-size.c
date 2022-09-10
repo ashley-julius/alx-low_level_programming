@@ -16,7 +16,7 @@ int main(void)
 	/*Display the size of a long long int in bytes */
 	puts("Size of a long long int: 8 byte(s)");
 	/*Display the size of a float in byte */
-	puts("Size of a float: 4 byte(s)\n");
+	puts("Size of a float: 4 byte(s)");
 
 	return (0);
 }
