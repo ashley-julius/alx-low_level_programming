@@ -11,14 +11,14 @@
 int main(void)
 {
 	/*
-	 *  define a new char named ch
+	 *  define a new int named ch
 	 */
-	char ch;
+	int ch;
 
 	/*
 	 * loop
 	 */
-	for (ch = '1'; ch <= '9'; ch++)
+	for (ch = 0; ch <= 9; ch++)
 		putchar(ch);
 	putchar('\n');
 
