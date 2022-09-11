@@ -20,7 +20,7 @@ int main(void)
 	/*
 	 * loop
 	 */
-	for (i = '1'; i <= '9'; i++)
+	for (i = '0'; i <= '9'; i++)
 		putchar(i);
 		/*
 		 * Another loop
