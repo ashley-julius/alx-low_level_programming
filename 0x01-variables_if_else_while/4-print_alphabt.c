@@ -12,19 +12,18 @@
 int main(void)
 {
 	/*
-	 * Declares our index, and the char array
+	 * Define our char ch
 	 */
-	int i = 0;
-	char name[] = "alphabets\n";
+	char ch;
 
 	/*
 	 * our while loop
 	 */
-	while (name[i])
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (name[i] != 'q' && name[i] != 'e')
-			putchar(name[i]);
-		i++;
+		if (ch != 'q' && ch != 'e')
+			putchar(ch);
+
 	}
 	return (0);
 }
