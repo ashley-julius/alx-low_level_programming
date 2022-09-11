@@ -1,0 +1,54 @@
+/* This program converts the alphabets to lowercase */
+#include <stdio.h>
+#include <ctype.h>
+/**
+ * main-This where our code starts
+ * @void-main takes no argument
+ * Return: zero
+ */
+int main(void)
+{	
+	/* 
+	 * counter in the loop 
+	 */
+	char chr;
+	
+	/*
+	 * container for each lower case char when we loop
+	 */
+	char lower_case_char;
+	
+	/*
+	 * container for each upper case char when we loop
+	 */
+	char upper_case_char;
+
+	/*
+	 * loop
+	 */
+	for (chr = 'a'; chr <= 'z'; chr++)
+	{
+		/*
+		 * convert char chr to lowercase
+		 */
+		lower_case_char = tolower(chr);
+		/*
+		 * print the char chr
+		 */
+		putchar(lower_case_char);
+		/*
+		 * convert char chr to uppercase
+		 */
+		upper_case_char = toupper(chr);
+		/*
+		 * print the char chr
+		 */
+		putchar(upper_case_char);
+	}
+	/*
+	 * print a newline
+	 */
+	putchar('\n');
+
+	return (0);
+}
