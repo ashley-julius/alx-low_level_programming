@@ -21,5 +21,7 @@ int main(void)
 		chr = tolower(chr);
 		putchar(chr);
 	}
+	putchar('\n');
+
 	return (0);
 }
