@@ -1,4 +1,5 @@
-/* This program prints the base ten digits
+/*
+ *This program prints the base ten digits
  * starting from using only putchat
  */
 #include <stdio.h>
@@ -10,7 +11,7 @@
 int main(void)
 {
 	/*
-	 *  define a new char named ch 
+	 *  define a new char named ch
 	 */
 	char ch;
 
@@ -20,6 +21,6 @@ int main(void)
 	for (ch = '1'; ch <= '9'; ch++)
 		putchar(ch);
 	putchar('\n');
+
 	return (0);
 }
-
