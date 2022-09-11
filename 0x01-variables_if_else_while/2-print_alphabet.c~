@@ -1,0 +1,33 @@
+/* This program converts the alphabets to lowercase */
+#include <stdio.h>
+#include < ctype.h>
+/**
+ * main-This where our code starts
+ * @void-main takes no argument
+ * Return: zero
+ */
+int main(void)
+{
+	/*
+	 * defining our counter
+	 */
+	int i = 0;
+
+	/*
+	 *  alphabets 
+	 */
+	char alpha[] = "abcdefGHIJKLMNOPQRSTUVWXYZ";
+	/*
+	 * container for each char when we loop
+	 */
+	char chr;
+	/*
+	 * loop
+	 */
+	while(alpha[i]){
+		chr = tolower(ahpha[i]);
+		putchar(chr);
+		i++;
+
+	return (0);
+}
