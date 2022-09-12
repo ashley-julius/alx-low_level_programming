@@ -13,21 +13,35 @@ int main(void)
 	/*
 	 * Declare our loop variable
 	 */
-	char ch;
+	int ch;
 
 	/*
 	 * Loop
 	 */
-	for (ch = '0'; ch <= '9'; ch++)
+	for (ch = 0; ch <= 9; ch++)
 	{
-		putchar(ch);
-		if (ch <= '8')
+		/*
+		 * print each ch in the loop
+		 */
+		putchar(ch + '0');
+		/*
+		 * check if condition is true
+		 */
+
+		if (ch <= 8)
 		{
+			/*
+			* print comma and space
+			*/
 			putchar(',');
 			putchar(' ');
 		}
-		else if (ch == '9')
+		else
 		{
+			/*
+			* Otherwise print char '$',
+			* after the last digit
+			*/
 			putchar('$');
 		}
 	}
