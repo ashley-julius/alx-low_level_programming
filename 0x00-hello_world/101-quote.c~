@@ -1,0 +1,18 @@
+/* This program a message to standard output */
+#include <stdio.h>
+#include <unistd.h>
+/**
+ * main- where everything starts
+ * @void- Means our main has no arguments
+ * Return: one
+ */
+int main(void)
+{
+	/* 
+	 * Asking linux to write 59 bytes of
+	 * array "string" to stderr
+	 */
+	write(2, "and that piece of art is useful\" - 
+			Dora Korpar, 2015-10-19\n", 59);
+	return (1);
+}
