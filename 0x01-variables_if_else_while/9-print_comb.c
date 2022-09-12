@@ -36,14 +36,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		else
-		{
-			/*
-			* Otherwise print char '$',
-			* after the last digit
-			*/
-			putchar('$');
-		}
+
 	}
 	return (0);
 }
