@@ -7,16 +7,26 @@
  */
 int main(void)
 {
-	/*Display the size of a char in byte */
-	puts("Size of a char: 1 byte(s)");
-	/*Display the size of an int in bytes */
-	puts("Size of an int: 4 byte(s)");
-	/*Display the size of a long int in bytes */
-	puts("Size of a long int: 8 byte(s)");
-	/*Display the size of a long long int in bytes */
-	puts("Size of a long long int: 8 byte(s)");
-	/*Display the size of a float in byte */
-	puts("Size of a float: 4 byte(s)");
+	/*
+	 * Display the size of a char in byte
+	 */
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	/*
+	 * Display the size of an int in bytes
+	 */
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	/*
+	 * Display the size of a long int in bytes
+	 */
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	/*
+	 * Display the size of a long long int in bytes
+	 */
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long int));
+	/*
+	 * Display the size of a float in byte
+	 */
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
 
 	return (0);
 }
