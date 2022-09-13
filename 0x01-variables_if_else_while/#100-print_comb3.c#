@@ -1,0 +1,39 @@
+/*
+ * This program prints two combination of
+ * different numbers
+ */
+#include <stdio.h>
+/**
+ * main - Entry point
+ * @void- means main takes no argument
+ * Return: zero
+ */
+int main(void)
+{
+	/*
+	 * loop variable
+	 */
+	int i;
+	int j;
+	int j_v;
+	int i_v;
+
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			j_v = (j - i);
+			i_v = (i - j);
+			if (i != j && j_v != i_v)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+
+
+	return (0);
+}
