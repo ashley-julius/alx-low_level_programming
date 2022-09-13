@@ -1,22 +1,21 @@
-/* This program a message to standard output */
+/*
+ * This code print a screen using
+ * the write function
+ */
 #include <stdio.h>
 #include <unistd.h>
-#include <string.h>
 /**
- * main- where everything starts
- * @void- Means our main has no arguments
- * Return: one
+ *main - Entry point
+ *Return: Always 1 (failure)
  */
 int main(void)
 {
-	/*
-	 * Array of n characters
-	 */
-	char *err[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	/*
-	 * Asking linux to write the array
-	 * of len bytes to stderr
-	 */
-	write(2, *err, sizeof(char));
-	return (1);
+	       /*
+		* write the message to stderr
+		*/
+		write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+
+		sizeof("and that piece of art is useful\" - Dora Korpar, 2015-10-19"));
+
+		return (1);
 }
