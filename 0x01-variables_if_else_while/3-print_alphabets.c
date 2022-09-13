@@ -37,9 +37,6 @@ int main(void)
 	for (j = 'a'; j <= 'z'; j++)
 	{
 		upper_case_char = toupper(j);
-		/*
-		* print the upper case char
-		*/
 		putchar(upper_case_char);
 	}
 	/*
