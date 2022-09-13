@@ -12,7 +12,7 @@ int main(void)
 	/*
 	 * Array of n characters
 	 */
-	char *err = "and that piece of art is useful\"- Dora Korpar, 2015-10-19";
+	char *err[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	/*
 	 * Asking linux to write the array
 	 * of len bytes to stderr
