@@ -1,6 +1,7 @@
 /* This program is just for testing our function */
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
 /**
  * main- Entry point
  * @void- means our main function has no argument
@@ -9,9 +10,9 @@
 int main(void)
 {
 	/*
-	 * invoking out putchar() function
+	 * invoking the print_alphabet function
 	 */
-	_putchar("_putchar\n")
+	print_alphabet();
 
 	return (0);
 }

@@ -1,11 +1,11 @@
-#ifndef main
-#define main
+#ifndef MAIN_H
+#define MAIN_H
 /*
  * Declaration of the putchar function or 
  * prototype
  */
 
-int _putchar(char set);
+char print_alphabet(void);
 
 
 
