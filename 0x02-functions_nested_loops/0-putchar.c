@@ -4,29 +4,39 @@
  */
 #include "main.h"
 #include <stdio.h>
-#include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @set: The character to print
- * Return: a set of characters to output
+ * _putchar - writes the character c
+ *to stdout
+ * @void: means the function takes
+ * no argument
+ * Return: zero
  */
-int _putchar(char set)
+char _putchar(void)
 {
-	return (write(1, &set, 10));
+	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
+	int i;
+
+	/*
+	 * for loop
+	 */
+	for (i = 0; i <= 9; i++)
+		putchar(ch[i]);
+	return (0);
+
 }
 
 /**
- * main- Entry point
- * @void: takes no argument
- * Return: zero
+ *main- Entry point
+ *@void- means our main function has no argument
+ *Return: zero
  */
-
 int main(void)
 {
 	/*
-	 * Invoking our _putchar function
-	 */
-	_putchar("_putchar\n")
+	* Invoking the _putchar function
+	*/
+
+	_putchar();
 	return (0);
 }

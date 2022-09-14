@@ -13,6 +13,7 @@ int main(void)
 	 * invoking the print_alphabet function
 	 */
 	print_alphabet();
+	print_alphabet();
 
 	return (0);
 }
