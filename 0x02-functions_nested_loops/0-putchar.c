@@ -2,6 +2,7 @@
  * This is a function that prints a set
  * of char with the right command
  */
+#include <unistd.h>
 #include "main.h"
 #include <stdio.h>
 
@@ -14,16 +15,8 @@
  */
 char _putchar(void)
 {
-	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
-	int i;
+	return (write(1, "_putchar\n", 9));
 
-	/*
-	 * for loop
-	 */
-	for (i = 0; i <= 9; i++)
-		putchar(ch[i]);
-	putchar('\n');
-	return (0);
 
 }
 
