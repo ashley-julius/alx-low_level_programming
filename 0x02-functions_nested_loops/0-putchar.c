@@ -1,0 +1,32 @@
+/*
+ * This is a function that prints a set
+ * of char with the right command
+ */
+#include "main.h"
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @set: The character to print
+ * Return: a set of characters to output
+ */
+int _putchar(char set)
+{
+	return (write(1, &set, 10));
+}
+
+/**
+ * main- Entry point
+ * @void: takes no argument
+ * Return: zero
+ */
+
+int main(void)
+{
+	/*
+	 * Invoking our _putchar function
+	 */
+	_putchar("_putchar\n")
+	return (0);
+}
