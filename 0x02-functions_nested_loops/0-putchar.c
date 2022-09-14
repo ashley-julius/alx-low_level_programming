@@ -5,37 +5,18 @@
 #include <unistd.h>
 #include "main.h"
 #include <stdio.h>
-
 /**
- * _putchar - writes the character c
- *to stdout
- * @void: means the function takes
- * no argument
- * Return: zero
- */
-int _putchar(void)
-{
-	/*
-	 * Declaring the word to print
-	 */
-	char *word = "_putchar\n";
-
-	return (write(1, word, 9));
-
-
-}
-
-/**
- *main- Entry point
- *@void- means our main function has no argument
- *Return: zero
+ *  * main - check the code.
+ *   * @void: means main takes
+ *    * no argument
+ *     * Return: Always 0.
  */
 int main(void)
 {
-	/*
-	* Invoking the _putchar function
-	*/
+	int i;
+	char ch[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 
-	_putchar();
+	for (i = 0; i < 9; i++)
+		_putchar(ch[i]);
 	return (0);
 }
