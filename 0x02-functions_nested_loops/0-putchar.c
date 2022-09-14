@@ -13,9 +13,14 @@
  * no argument
  * Return: zero
  */
-char _putchar(void)
+int _putchar(void)
 {
-	return (write(1, "_putchar\n", 9));
+	/*
+	 * Declaring the word to print
+	 */
+	char *word = "_putchar\n";
+
+	return (write(1, word, 9));
 
 
 }

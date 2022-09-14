@@ -7,7 +7,7 @@
 
 char print_alphabet(void);
 char print_alphabet(void);
-char _putchar(void);
+int _putchar(void);
 
 
 
