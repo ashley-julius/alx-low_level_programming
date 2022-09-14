@@ -10,7 +10,7 @@
  * @void: means it takes no argument
  * Return: zero
  */
-char print_alphabet(void)
+void print_alphabet(void)
 {
 	/*
 	 *  Declare our loop counter
@@ -22,8 +22,8 @@ char print_alphabet(void)
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		lower_case = tolower(ch);
-		putchar(lower_case);
+		_putchar(lower_case);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
+	return;
 }
