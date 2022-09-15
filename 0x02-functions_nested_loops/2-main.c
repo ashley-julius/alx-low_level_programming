@@ -15,11 +15,13 @@ int main(void)
 	 * invoking the print_alphabet function
 	 */
 
-	r = _islower('H');
+	r = _isalpha('H');
 	_putchar(r + '0');
-	r = _islower('o');
+	r = _isalpha('o');
 	_putchar(r + '0');
-	r = _islower(108);
+	r = _isalpha(108);
+	_putchar(r + '0');
+	r = _isalpha(';');
 	_putchar(r + '0');
 	_putchar('\n');
 	return (0);
