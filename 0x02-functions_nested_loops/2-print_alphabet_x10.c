@@ -6,30 +6,26 @@
 #include <ctype.h>
 #include <stdio.h>
 /**
- * print_alphabet- This display letters in lowercase
+ * print_alphabet_x10- This display letters in lowercase
  * @void: means it takes no argument
  * Return: zero
  */
-char print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	/*
-	 *  Declare our loop counter
-	 *  and our placeholder
-	 */
+	* Declare our local variables
+	*/
 	char ch;
-	char lower_case;
-	int i = 0;
+	int i;
 
-	for (i = 10; i >= 1; i++)
+	for (i = 0; i < 10; i++)
 	{
 		for (ch = 'A'; ch <= 'Z'; ch++)
-
 		{
-			lower_case = tolower(ch);
-			putchar(lower_case);
+			char lower_case = tolower(ch);
 
+			_putchar(lower_case);
 		}
-		putchar('\n');
+			 _putchar('\n');
 	}
-	return (0);
 }
