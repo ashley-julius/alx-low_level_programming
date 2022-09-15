@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <ctype.h>
+#include <stdlib.h>
 /**
  * main- Entry point
  * @void- means our main function has no argument
@@ -12,7 +13,9 @@ int main(void)
 	/*
 	 * invoking the print_alphabet function
 	 */
-	print_alphabet();
+	int n;
 
+	n = add(89, 9);
+	printf("%d\n", n);
 	return (0);
 }
