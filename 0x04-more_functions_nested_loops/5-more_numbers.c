@@ -17,14 +17,23 @@ void more_numbers(void)
 	/*
 	* Declare our local variables
 	*/
-	int ch;
-	int i;
+	int i, j, x;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (ch = 0; ch <= 14; ch++)
+		for (x = 0; x < 10; x++)
 		{
-			write(1, ch, 10);
+			_putchar(x + '0');
+			if (x == 9)
+			{
+				for (j = 0; j < 5; j++)
+				{
+					_putchar('1');
+					_putchar(j + '0');
+				}
+			}
+
+
 		}
 		_putchar('\n');
 	}
