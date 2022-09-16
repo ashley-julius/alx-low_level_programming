@@ -14,6 +14,7 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i);
+		i++;
 	}
 	     /*
 	     * We called a while loop
@@ -22,6 +23,6 @@ int main(void)
 	     * of the loop, which should have been
 	     * i++ i.e. post-increment
 	     */
-	printf("Infinite loop avoided!  \\o/\n");
+	printf("Infinite loop avoided! \\o/\n");
 	return (0);
 }
