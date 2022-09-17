@@ -1,0 +1,28 @@
+/* 
+ * This program draws a straight
+ * to the screen
+ */
+#include "main.h"
+/**
+ * print_line- prints a straight to
+ * the screen
+ * @n: parameter of type int
+ * Return: void
+ */
+void print_line(int n)
+{
+	if (n == 0 && n < 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		while (n > 0)
+		{
+			_putchar('_');
+			n--;
+		}
+	}
+	_putchar('\n');
+	return (0);
+}
