@@ -5,7 +5,7 @@
 #include "main.h"
 /**
  * _puts - print a bunch of string
- * @s: pointer to char
+ * @str: pointer to char
  */
 void _puts(char *str)
 {
