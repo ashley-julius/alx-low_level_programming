@@ -1,0 +1,40 @@
+#include "main.h"
+
+/**
+ ** _strcat - add src to dest
+ ** @dest: pointer to char
+ ** @src: pointer to char
+ ** Return: dest
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	/*
+	 ** Declaration of local variables
+	 */
+	int i, len, j;
+
+	j = i = len = 0;
+	/*
+	 * While loop
+	 */
+	while (dest[i] != '\0')
+	{
+		*dest++;
+		i++;
+	}
+	len = i;
+	/*
+	 * Another while loop
+	 */
+	while (src[j] != '\0')								
+	{
+		dest[len] = src[j];
+		*dest++;
+		*src++;
+		j++;
+	}
+
+	return (dest);
+}
+
