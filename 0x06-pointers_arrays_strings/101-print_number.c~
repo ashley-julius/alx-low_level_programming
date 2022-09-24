@@ -1,0 +1,42 @@
+/* 
+ ** This function prints an int without 
+ ** using array and int
+ */
+
+
+
+
+
+void print_number(int n)
+{
+	/*
+	 * check if n is zero & print zero
+	 */
+	if (n == 0)
+		_putchar('0');
+	/*
+	 * check if n is negative and use
+	 * hyphen as the minus
+	 */
+	else if (n < 0)
+	{
+		_putchar('-');
+		n = n * -1;
+	}
+	else
+		/*
+		 * use recursion and prints
+		 * the last digit
+		 */
+		if (n / 10)
+			print(n / 10);
+	/* 
+	 * print the last digit
+	 */
+	_putchar(n % 10 + '0');
+}
+
+
+
+	
+
