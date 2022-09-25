@@ -1,0 +1,37 @@
+/*
+ * This program prints all possible
+ * combination of three digits
+ */
+#include <stdio.h>
+/**
+ ** main - Entry point
+ **
+ ** Return: zero (0)
+ */
+int main(void)
+{
+	/*
+	 * Loop counter variable Declaration
+	 */
+	int i, j, k;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 1; j < 9; j++)
+		{
+			for (k = 2; k <= 9; k++)
+			{
+				if ((k > j && k > i) && (j > i))
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
