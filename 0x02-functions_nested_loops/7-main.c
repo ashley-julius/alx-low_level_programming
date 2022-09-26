@@ -10,14 +10,9 @@
  */
 int main(void)
 {
-	/*
-	 * invoking the print_alphabet function
-	 */
 
+	int r;	
 	
-	
-	print_alphabet();
-	 int r;
 
 	print_last_digit(98);
 	print_last_digit(0);
