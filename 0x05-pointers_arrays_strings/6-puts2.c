@@ -1,5 +1,6 @@
 /* This function prints every other array of character */
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - prints every other character of an array
  * @str: pointer to a char
