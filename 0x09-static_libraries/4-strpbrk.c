@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- ** _strpbrk - concatenate src to dest
+ ** _strpbrk - receives two addresses
  ** @s: pointer to char
  ** @accept: pointer to char
- ** Return: s
+ ** Return: an address
  */
 
 char *_strpbrk(char *s, char *accept)

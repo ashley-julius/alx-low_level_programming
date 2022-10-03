@@ -1,4 +1,4 @@
-/* This function returns the length of a string */
+/* This function converts num into text */
 #include "main.h"
 /**
  * _atoi - returns the length of a string
@@ -7,6 +7,6 @@
  */
 int _atoi(char *s)
 {
-	return (s);
+	return (0);
 	_putchar('\n');
 }
