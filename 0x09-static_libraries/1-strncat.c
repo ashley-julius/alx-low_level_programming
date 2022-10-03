@@ -10,19 +10,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int c, d;
-
-	c = d = 0;
-	while (*(dest + c))
-		c++;
-	while (d < n && *(src + d))
-	{
-		*(dest + c) = *(src + d);
-		c++;
-		d++;
-	}
-	if (d < n)
-		*(dest + c) = *(src + d);
+	
 	return (dest);
 	_putchar('\n');
 }

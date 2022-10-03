@@ -5,14 +5,8 @@
  * @s: pointer to a char
  *Return: the lenght
  */
-int _strlen(char *s)
+int _atoi(char *s)
 {
-	int len;
-
-	len = 0;
-
-	while (s[len] != '\0')
-		len++;
-	return (len);
+	return (s);
 	_putchar('\n');
 }

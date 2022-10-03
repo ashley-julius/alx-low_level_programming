@@ -10,19 +10,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i, j;
-	char **k;
-
-	i = 0;
-	j = 0;
-	while (*(s + i) != '\0')
-	{
-		if (*(s + i) == c)
-			*k = ((s + i));
-		else
-			*k = &(c);
-		i++;
-	}
 	return (s);
 	_putchar('\n');
 
