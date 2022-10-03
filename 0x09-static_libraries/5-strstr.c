@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- ** _strcat - concatenate src to dest
- ** @dest: pointer to char
- ** @src: pointer to char
- ** Return: dest
+ ** _strstr - concatenate src to dest
+ ** @haystack: pointer to char
+ ** @needle: pointer to char
+ ** Return: needle
  */
 
 char *_strstr(char *haystack, char *needle)

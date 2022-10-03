@@ -1,9 +1,9 @@
 /* This function returns the length of a string */
 #include "main.h"
 /**
- * _strlen - returns the length of a string
+ * _atoi - returns the length of a string
  * @s: pointer to a char
- *Return: the lenght
+ *Return: the address stored in s
  */
 int _atoi(char *s)
 {
