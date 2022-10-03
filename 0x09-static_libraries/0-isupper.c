@@ -11,6 +11,7 @@
  */
 int _isupper(int c)
 {
+	_putchar(c + '0');
 	return (0);
 	_putchar('\n');
 }
