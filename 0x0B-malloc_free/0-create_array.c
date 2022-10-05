@@ -9,19 +9,14 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *t, *k;
-	
-	if (size == 0)
-	{
-		t = NULL;
-	}
+	char *t;
+
 	t = malloc(size);
-	if (t == NULL)
+	if ((t == NULL) || size == 0)
 	{
-		k = NULL;
-		return (k);
+		return (t);
 	}
 	t[0] = c;
-	return (t);
 	_putchar('\n');
+	return (t);
 }
