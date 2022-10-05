@@ -9,16 +9,18 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *t;
-
+	char *t, *k;
+	
 	if (size == 0)
 	{
 		t = NULL;
 	}
-	else
+	t = malloc(size);
+	if (t == NULL)
 	{
-		t = malloc(size);
-		t[0] = c;
+		k = NULL;
+		return (k);
 	}
+	t[0] = c;
 	return (t);
 }
