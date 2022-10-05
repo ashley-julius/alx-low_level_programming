@@ -22,6 +22,5 @@ char *create_array(unsigned int size, char c)
 		return (t);
 	for (i = 0; i < size; i++)
 		t[i] = c;
-	_putchar('\n');
 	return (t);
 }
