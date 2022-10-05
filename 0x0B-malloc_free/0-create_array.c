@@ -23,4 +23,5 @@ char *create_array(unsigned int size, char c)
 	}
 	t[0] = c;
 	return (t);
+	_putchar('\n');
 }
