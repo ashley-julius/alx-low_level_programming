@@ -13,6 +13,10 @@ char *str_concat(char *s1, char *s2)
 	char *new_string;
 
 	len1 = len2 = i = j = 0;
+	if (s1[i] == 0)
+		s1[i] = '\0';
+	else if (s2[i] == 0)
+		s2[i] = '\0';
 	while (s1[i] != '\0')
 	{
 		i++;
@@ -26,8 +30,6 @@ char *str_concat(char *s1, char *s2)
 	new_string = malloc((len1 + len2 + 1) * sizeof(char));
 	if (new_string == NULL)
 		return (new_string);
-	if ((s1 == NULL) || (s2 == NULL))
-		*new_string = '\0';
 	for (k = 0; k < len1; k++)
 		*(new_string + k) = s1[k];
 	for (m = 0; m <= len2; m++)
