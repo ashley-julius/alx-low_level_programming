@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; (i < argc && argv[0] != 0); i++)
 		{
-				if (i > 0)
-					sum += 1;
+			if (i > 0)
+				sum += 1;
 		}
 	}
 	printf("%d\n", sum);
