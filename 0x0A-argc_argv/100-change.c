@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argv == NULL)
 		return (1);
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
 	if (digit < 0)
 	{
-		printf("%d", 0);
+		printf("%d\n", 0);
 		return (0);
 	}
 
