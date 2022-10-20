@@ -2,6 +2,21 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+ * _stringlength - finding the length of any string
+ * @s: string literal
+ * Return: an int
+ */
+int _stringlength(char *s)
+{
+	int k;
+
+	k = 0;
+	while (s[k] != '\0')
+		k++;
+	return (k);
+}
+
+/**
  * str_concat - This function concatenates to string into one
  * @s1: pointer to char
  * @s2: pointer to char
@@ -9,33 +24,22 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, k, i, j, m;
-	char *new_string;
+	int total_len, i, len1, len2;
+	char *tmp;
 
-	len1 = len2 = i = j = 0;
-	if (s1[i] == 0)
-		s1[i] = '\0';
-	else if (s2[i] == 0)
-		s2[i] = '\0';
-	while (s1[i] != '\0')
-	{
-		i++;
-		len1++;
-	}
-	while (s2[j] != '\0')
-	{
-		j++;
-		len2++;
-	}
-	new_string = malloc((len1 + len2 + 1) * sizeof(char));
-	if (new_string == NULL)
-		return (new_string);
-	for (k = 0; k < len1; k++)
-		*(new_string + k) = s1[k];
-	for (m = 0; m <= len2; m++)
-	{
-		k = len1 + m;
-		*(new_string + k) = s2[m];
-	}
-	return (new_string);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	len1 = _stringlength(s1);
+	len2 = _stringlength(s2);
+	total_len = len1 + len2;
+	tmp = (char *)malloc(sizeof(char) * total_len);
+	if (tmp == NULL)
+		return (tmp);
+	for (i = 0; i < len1; i++)
+		*(tmp + i) = *(s1 + i);
+	for (i = 0; i <= len2; i++)
+		*(tmp + len1 + i) = *(s2 + i);
+	return (tmp);
 }
