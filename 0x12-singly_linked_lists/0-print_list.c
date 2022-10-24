@@ -4,7 +4,7 @@
 /**
  * print_list - prints the elements in a struct including its length
  * @h: a pointer to a struct which you can't the value in the address
- * Return: only a positive number
+ * Return: the number of elements
  */
 
 
@@ -30,6 +30,6 @@ size_t print_list(const list_t *h)
 			ptr = ptr->next;
 		}
 	}
-	return(count_element);
+	return (count_element);
 }
 
