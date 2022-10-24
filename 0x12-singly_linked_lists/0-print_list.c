@@ -13,8 +13,6 @@ size_t print_list(const list_t *h)
 	const list_t *ptr = NULL;
 	size_t count_element = 0;
 
-	if (h == NULL)
-		printf("Linked list is empty");
 	ptr = h;
 	while (ptr != NULL)
 	{
