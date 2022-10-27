@@ -1,0 +1,44 @@
+/* This program adds a new node at the end of the list */
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+	listint_t *p = NULL;
+	listint_t *tmp = NULL;
+	
+	if (*head == NULL)
+	{
+		*head = (listint_t *)malloc(sizeof(listint_t));
+		if (*head == NULL)
+			return (*head);
+		*head->n = n;
+		*head->next = NULL;
+	}
+	else
+	{
+		p = *head;
+		tmp = (listint_t *)malloc(sizeof(listint_t));
+		if (tmp == NULL)
+			return (tmp);
+		tmp->n = n;
+		tmp->next = NULL;
+
+		/* Loop until the last node */
+		while (p != NULL)
+			p = p->next;
+		p->next = tmp;
+	}
+	return (*head);
+}
+		
+	
+		
+
+	
+
+
+
+
+	
