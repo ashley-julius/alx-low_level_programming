@@ -161,7 +161,7 @@ void entry(unsigned int e_entry, unsigned char *e_ident)
  * main - read a ELF file.
  * @argc: the number of args
  * @argv: the Args
- * section header: the header of this function is holberton.h
+ * section header: the header of this function is main.h
  * Return: 0 in success
  */
 int main(int argc, char *argv[])
