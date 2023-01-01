@@ -9,13 +9,13 @@ void free_listint2(listint_t **head)
 {
 	listint_t *p = NULL;
 
-	if (*head == NULL)
+	p = *head
+	if (p == NULL)
 	{
 		printf("(nil)");
 	}
 	else
 	{
-		p = *head;
 		while (p != NULL)
 		{
 			p = p->next;
