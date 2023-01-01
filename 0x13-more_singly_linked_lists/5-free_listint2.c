@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * free_listint2 - This function releases the node memory from the heap
  *@head: poiner to a pointer to a struct
