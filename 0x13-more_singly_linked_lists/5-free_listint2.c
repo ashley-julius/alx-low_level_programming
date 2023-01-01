@@ -11,7 +11,6 @@ void free_listint2(listint_t **head)
 	if (*head == NULL)
 	{
 		printf("(nil)");
-		return;
 	}
 
 	else
@@ -22,5 +21,7 @@ void free_listint2(listint_t **head)
 			free(*head);
 			*head = p;
 		}
+	
 	}
+	return;
 }
