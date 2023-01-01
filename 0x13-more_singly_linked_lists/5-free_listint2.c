@@ -9,7 +9,11 @@ void free_listint2(listint_t **head)
 	listint_t *p = *head;
 
 	if (*head == NULL)
+	{
+		printf("(nil)");
 		return;
+	}
+
 	while (p != NULL)
 	{
 		p = p->next;
