@@ -1,0 +1,2 @@
+This project introduces to us doubly linked list, it shows us how singly linked list is different from that of a doubly linked list. One important difference it shows us is that, traversing on a singly linked list is linear, meaning movement is only one way, that is forward only. Whilst that of a doubly linked list is non-linear, meaning it can go two ways. It can go forward like a singly linked list and it can also go backwards.
+Working with a doubly linked list, makes our work easier compared to singly linked list, which is cumbersome.
