@@ -18,7 +18,7 @@ typedef struct dlistint_s
 } dlistint_t;
 
 
-
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 void free_dlistint(dlistint_t *head);
 #include <stdio.h>
 size_t dlistint_len(const dlistint_t *h);
