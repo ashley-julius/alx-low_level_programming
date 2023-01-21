@@ -9,40 +9,56 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i;
-	dlistint_t *ptr, *temp;
+	dlistint_t *node, *new;
+	size_t i = 0;
 
-	ptr = *h;
-	temp = malloc(sizeof(dlistint_t));
-	if (temp == NULL)
-		return (temp);
-	temp->n = n;
-	if (*h == NULL)
+	if (!(*h) && !idx)
+		return (*h = new_node(n));
+	else if (!idx)
+		return (*h = add_dnodeint(h, n));
+	node = *h;
+	if (node->prev)
+		while (node->prev)
+			node = node->prev;
+	else if (!node->next)
+		while (node->prev)
+			node = node->prev;
+
+	while (++i < idx && node->next)
 	{
-		temp->next = NULL;
-		temp->prev = NULL;
-		*h = temp;
+		node = node->next;
 	}
-	if (ptr->next == NULL)
+	if (i < idx)
+		return (NULL);
+	else if (node)
 	{
-		return (ptr);
+		new = new_node(n);
+		if (!new)
+			return (NULL);
+		if (node->next)
+			node->next->prev = new;
+		new->prev = node;
+		new->next = node->next;
+		node->next = new;
 	}
-	else
-	{
-		for (i = 0; i < idx - 1; i++)
-		{
-			if (ptr->next == NULL)
-			{
-				ptr->next = temp;
-				temp->prev = ptr;
-				temp->next = NULL;
-			}
-			ptr = ptr->next;
-		}
-		temp->next = ptr->next;
-		temp->next->prev = temp;
-		temp->prev = ptr;
-		ptr->next = temp;
-	}
-	return (temp);
+	return (new);
+}
+
+/**
+ * new_node - creates a new node
+ * @n: value to set the new node to.
+ *
+ * Return: pointer to a new node.
+ */
+dlistint_t *new_node(int n)
+{
+	dlistint_t *node;
+
+	node = malloc(sizeof(dlistint_t));
+	if (!node)
+		return (NULL);
+	node->n = n;
+	node->next = node->prev = NULL;
+
+	return (node);
 }
