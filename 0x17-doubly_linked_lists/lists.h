@@ -19,7 +19,7 @@ typedef struct dlistint_s
 
 
 
-
+void free_dlistint(dlistint_t *head);
 #include <stdio.h>
 size_t dlistint_len(const dlistint_t *h);
 #include <stdlib.h>
