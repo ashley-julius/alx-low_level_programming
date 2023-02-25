@@ -8,9 +8,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Rules
 .PHONY: all
-all : $(NAME)
-
-$(NAME): $(OBJ)
+all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY : clean
@@ -22,12 +20,11 @@ oclean :
 	$(RM) $(OBJ)
 
 .PHONY: fclean
-fclean : clean
-	$(RM) $(NAME)
+fclean : clean oclean
 
 .PHONY: re
 re : fclean all
-	$(CC) $(CLAGS) -c $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
 
 # Dependencies
 $(OBJ): m.h
