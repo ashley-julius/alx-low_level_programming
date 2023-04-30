@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Program start point
+ * main - Entry point
  * Description: prints the first 50 Fibonacci numbers, starting with 1 and 2
  * Return: 0 on success
  */
@@ -19,14 +19,12 @@ int main(void)
 
 	printf("%li, %li, ", x, y);
 
-	while (counter < 50)
+	while (counter <= 49)
 	{
 		printf("%li", x + y);
 
-		if (counter == 49)
-			break;
-
-		printf(", ");
+		if (counter <= 48)
+			printf(", ");
 		tmp = x;
 		x = y;
 		y = x + tmp;
